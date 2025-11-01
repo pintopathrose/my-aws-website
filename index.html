@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - AWS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio!</h1>
+        <p>Hosted on AWS EC2 with Auto-Deployment</p>
+    </header>
+    
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I'm learning AWS cloud computing by building real projects!</p>
+        </section>
+        
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3>🌐 This Website</h3>
+                <p>Static website hosted on AWS EC2 with Elastic IP</p>
+                <p><strong>Tech:</strong> AWS EC2, GitHub Actions, Apache</p>
+            </div>
+            <div class="project-card">
+                <h3>🚀 Coming Soon</h3>
+                <p>More projects in progress...</p>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <h2>Skills I'm Learning</h2>
+            <ul>
+                <li>☁️ AWS Cloud Services</li>
+                <li>💻 HTML & CSS</li>
+                <li>🔄 CI/CD with GitHub Actions</li>
+                <li>🖥️ Linux Server Management</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Built with ❤️ on AWS | Last updated: <span id="date"></span></p>
+    </footer>
+    
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
